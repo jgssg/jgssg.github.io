@@ -1,0 +1,70 @@
+#footer{
+    z-index: 2000;
+    position: fixed;
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+}
+.Logo{
+    padding: 20px;
+}
+footer{
+    clear: both;
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+}
+body{
+    background-color: rgb(225, 225, 225);
+    background-image: url(image/web01.png);
+    background-size: 480px;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    height: 100%;
+    z-index: 2000;
+    position: fixed;
+    width: 100%;
+    max-width: 480px;
+    left:0%;
+    right:0%;
+    margin: auto;
+}
+.god-1{
+    position: absolute;
+    top: 32%; 
+    left: 4%;
+}
+.god-1 :hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+.god-2{
+    position: absolute;
+    top: 32%; 
+    right: 4%;
+}
+.god-2 :hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+.god-3{
+    position: absolute;
+    bottom: 12%; 
+    left: 4%;
+}
+.god-3 :hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+.god-4{
+    position: absolute;
+    bottom: 12%; 
+    right: 4%;
+}
+.god-4 :hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+}

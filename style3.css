@@ -1,0 +1,134 @@
+#footer{
+  z-index: 2000;
+  position: fixed;
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+}
+.Logo{
+  padding: 20px;
+}
+footer{
+  clear: both;
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+}
+body{
+    background-color: rgb(225, 225, 225);
+    background-image: url(image/web02_03.png);
+    background-size: 480px;
+    background-repeat: no-repeat;
+    background-position: 50% 6%;
+    height: 100%;
+    z-index: 2000;
+    position: fixed;
+    width: 100%;
+    max-width: 480px;
+    left:0%;
+    right:0%;
+    margin: auto;
+}
+.Logo{
+    position: absolute;
+    top: 10px; 
+    left: 20px;
+    display: block;
+}
+.box{
+    margin-top: 25%;
+    margin-left: 22%;
+    width: 120px;
+    height: 240px;
+    position: relative;
+    transform-style: preserve-3d;/*3D效果 */
+    transition: 4s ease;
+  }
+.box2{
+    margin-top: -55%;
+    margin-left: 53%;
+    width: 120px;
+    height: 240px;
+    position: relative;
+    transform-style: preserve-3d; /*3D效果 */
+    transition: 4s ease;
+  }
+.card{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /*表示隱藏被旋轉div元素的背面，這樣旋轉之後，第一張卡片是背面朝螢幕方向，看不到，第二張卡片旋轉之後則是正面朝像螢幕，即形成了旋轉的效果。 */
+    border-radius: 20px;
+  }
+.front{
+    background-image: url(../image/bay-a.png);
+    background-size: cover;
+  }
+.back{
+    transform: rotateY(540deg);/*繞著Y軸旋轉*/
+    background-image: url(../image/bay-aa.png);
+    background-size: cover;
+  }
+.front2{
+    background-image: url(../image/bay-bb.png);
+    background-size: cover;
+  }
+.back2{
+    transform: rotateY(-540deg);/*繞著Y軸旋轉*/
+    background-image: url(../image/bay-b.png);
+    background-size: cover;
+  }
+.flipped{
+    transform: rotateY(-1620deg);/*繞著Y軸旋轉*/
+  }
+
+.container {
+  position: relative;
+}
+
+#image1 {
+  position: fixed;
+  top: 48%;
+  left: 50%;
+  transform: translate(0px, -50%);
+  opacity: 0;
+}
+.popup-background {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  max-width: 480px;
+  height: 100%;
+  background-color: rgba(225, 225, 225, 1); /* 半透明黑色背景 */
+  z-index: 100; /* 确保在其他元素上层 */
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 480px;
+  height: auto;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0px;
+  border-radius: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 150;
+}
+
+.popup-image {
+  position: fixed;
+  margin: 0%;
+  width: 480px;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
